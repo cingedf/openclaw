@@ -1,6 +1,6 @@
 ---
-name: obsidian
-description: Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.
+name: Obsidian笔记
+description: 管理Obsidian笔记库。
 homepage: https://help.obsidian.md
 metadata:
   {

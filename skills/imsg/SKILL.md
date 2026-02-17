@@ -1,6 +1,6 @@
 ---
-name: imsg
-description: iMessage/SMS CLI for listing chats, history, watch, and sending.
+name: iMessage
+description: iMessage/SMS命令行工具。
 homepage: https://imsg.to
 metadata:
   {

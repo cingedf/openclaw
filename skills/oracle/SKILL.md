@@ -1,6 +1,6 @@
 ---
-name: oracle
-description: Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).
+name: Oracle CLI
+description: Oracle CLI最佳实践指南。
 homepage: https://askoracle.dev
 metadata:
   {

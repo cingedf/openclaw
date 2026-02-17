@@ -1,6 +1,6 @@
 ---
-name: video-quote-finder
-description: Find where a quote appears in a YouTube video and return timestamped links. Use when users ask "where in this video does X say Y", "find the timestamp for this line", or "locate quote in this YouTube video".
+name: 视频引用查找
+description: 在视频中查找引用并返回时间戳链接。
 ---
 
 # Video Quote Finder

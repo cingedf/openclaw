@@ -69,6 +69,7 @@ function filterSkillEntries(
 
 const SKILL_COMMAND_MAX_LENGTH = 32;
 const SKILL_COMMAND_FALLBACK = "skill";
+const SKILL_COMMAND_PREFIX = "sk_";
 // Discord command descriptions must be ≤100 characters
 const SKILL_COMMAND_DESCRIPTION_MAX_LENGTH = 100;
 
@@ -85,7 +86,10 @@ function sanitizeSkillCommandName(raw: string): string {
     .replace(/_+/g, "_")
     .replace(/^_+|_+$/g, "");
   const trimmed = normalized.slice(0, SKILL_COMMAND_MAX_LENGTH);
-  return trimmed || SKILL_COMMAND_FALLBACK;
+  if (!trimmed || /^[0-9_]/.test(trimmed)) {
+    return SKILL_COMMAND_PREFIX + (trimmed || "x").slice(0, SKILL_COMMAND_MAX_LENGTH - 3);
+  }
+  return trimmed;
 }
 
 function resolveUniqueSkillCommandName(base: string, used: Set<string>): string {

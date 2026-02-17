@@ -76,7 +76,7 @@ function findVoice(voices: ElevenLabsVoice[], query: string): ElevenLabsVoice | 
 export default function register(api: OpenClawPluginApi) {
   api.registerCommand({
     name: "voice",
-    description: "List/set ElevenLabs Talk voice (affects iOS Talk playback).",
+    description: "设置ElevenLabs语音（影响iOS语音播放）。",
     acceptsArgs: true,
     handler: async (ctx) => {
       const args = ctx.args?.trim() ?? "";

@@ -1,6 +1,6 @@
 ---
-name: weather
-description: Get current weather and forecasts (no API key required).
+name: 天气查询
+description: 获取当前天气和预报（无需API密钥）。
 homepage: https://wttr.in/:help
 metadata: { "openclaw": { "emoji": "🌤️", "requires": { "bins": ["curl"] } } }
 ---

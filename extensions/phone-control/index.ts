@@ -329,7 +329,7 @@ export default function register(api: OpenClawPluginApi) {
 
   api.registerCommand({
     name: "phone",
-    description: "Arm/disarm high-risk phone node commands (camera/screen/writes).",
+    description: "启用/禁用手机高风险命令（摄像头/屏幕/写入）。",
     acceptsArgs: true,
     handler: async (ctx) => {
       const args = ctx.args?.trim() ?? "";

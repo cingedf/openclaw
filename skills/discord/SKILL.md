@@ -1,6 +1,6 @@
 ---
-name: discord
-description: "Discord ops via the message tool (channel=discord)."
+name: Discord
+description: Discord频道消息操作。
 metadata: { "openclaw": { "emoji": "🎮", "requires": { "config": ["channels.discord.token"] } } }
 allowed-tools: ["message"]
 ---
